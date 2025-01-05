@@ -15,7 +15,7 @@ body{
     border-radius: 12px;
     color:hsl(0, 0%, 100%);
     margin: 100px auto;
-    max-width:375px;/*Mobile Screens*/
+    max-width:375px;
     width: 90%;
     height:auto;
     padding: 28px;
@@ -69,7 +69,12 @@ a{
     margin:25px 0;
 }
 @media(min-width: 1024px){
-    .container{
+    body{
         max-width:1440px;/*desktop Screens*/
+    }
+}
+@media(max-width:1080px){
+    body{
+        max-width:375px;
     }
 }
