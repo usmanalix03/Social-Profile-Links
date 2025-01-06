@@ -2,9 +2,9 @@
     font-family: 'custom';
     src: url('inter.ttf') format('truetype');
 }
+@media(min-width:376px){/*for pc screen*/
 body{
     background-color: #141414;
-    max-width: 1440px;
 }
 .container{
     display:flex;
@@ -13,14 +13,13 @@ body{
     justify-content: center;
     justify-items: center;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 30px;
     color:hsl(0, 0%, 100%);
-    max-width:375px;
-    width: 90%;
-    height:auto;
+    margin: 75px auto;
+    width: 355px;
+    height:555px;
     padding: 28px;
     font-family:custom;
-    margin:55px auto 55px auto;
 }
 img{
     border-radius:100px;
@@ -28,49 +27,101 @@ img{
     width:100px;
     margin-bottom: 10px;
 }
+#name{
+    font-weight: 525;
+    font-size:28px;
+}
+#locality{
+    margin-top: 8px;;
+    font-weight:600;
+    color:#c7e561;
+}
+#profession{
+    margin:25px 0;
+}
 .links{
     font-weight:580;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap:5.5px;
     align-items: center;
-    flex-direction: column;
 }
-#locality{
-    color:#c7e561;
-}
-label{
-    margin: 8px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
+
 #github,#fm,#linkedin,#twitter,#insta{
     display: flex;
     justify-content: center;
     align-items:center;
     height:47.5px;
     width:339px;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #333333;
-}
-#name{
-    font-weight: 525;
-    font-size:28px;
-}
-#locality{
-    font-weight:600;
+    margin-top:10px;
+    text-decoration: none;
+    color: white;
 }
 #github:hover,#fm:hover,#linkedin:hover,#twitter:hover,#insta:hover{
     background-color: #c4f82a;
-    color:black;
+    color: black;
 }
-#profession{
-    margin:25px 0;
 }
-@media(max-width:768px){
+
+@media(max-width: 376px){/*for mobile screen*/
+    body{
+        background-color: #141414;
+    }
     .container{
-        max-width:375px;
+        font-family:custom;
+        display:flex;
+        background-color: #1f1f1f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        height:max-content;
+        color:white;
+        padding-top:20px;
+        padding-bottom: 30px;
+        margin-top: 25px;
+    }
+    img{
+        border-radius:100px;
+        height:100px;
+        width:100px;
+        margin-bottom: 13px;
+    }
+    #name{
+        font-weight: 525;
+        font-size:30px;
+    }
+    #locality{
+        font-weight:600;
+        margin: 15px 0;
+        color:#c7e561;
+    }
+    #profession{
+        margin:20px 0;
+        font-size:15px;;
+    }
+    #github,#fm,#linkedin,#twitter,#insta{
+        display: flex;
+        width:285px;
+        height: 45px;
+        justify-content: center;
+        align-items:center;
+        border-radius: 14px;
+        margin-top: 15px;
+        background-color: #333333;
+        color:white;
+        font-weight:580;
+        text-decoration: none;
+    }
+    #github:active,#fm:active,#linkedin:active,#twitter:active,#insta:active{
+        background-color: #c4f82a;
+        color:black;
+    }
+    #github:hover,#fm:hover,#linkedin:hover,#twitter:hover,#insta:hover{
+        background-color: #c4f82a;
+        color: black;
     }
 }
